@@ -20,6 +20,8 @@ cd epd1in54v2-node
 npm install
 
 # Build steps
+sudo apt update
+sudo apt install build-essential libbcm2835-dev
 sudo npx node-gyp clean
 sudo npx node-gyp configure
 sudo npx node-gyp build
