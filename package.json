@@ -1,14 +1,16 @@
 {
-  "name": "epd1in54v-2-node",
-  "version": "1.0.0",
+  "name": "epd1in54v2-node",
+  "version": "0.1.0",
+  "description": "Native Node.js driver for Waveshare 1.54\" e-Paper V2.1 display",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node-gyp rebuild"
   },
-  "keywords": [],
+  "keywords": ["e-paper", "waveshare", "raspberrypi", "epd", "display", "node-gyp"],
   "author": "Kazik Karczewski",
   "license": "MIT",
-  "description": "Native Node.js driver for Waveshare EPD 1.54\" V2.1 (Black/White)",
+  "gypfile": true,
+  "type": "commonjs",
   "devDependencies": {
     "cmake-js": "^7.3.1",
     "node-addon-api": "^8.3.1",
