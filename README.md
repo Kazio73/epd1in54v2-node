@@ -22,9 +22,13 @@ npm install
 # Build steps
 sudo apt update
 sudo apt install build-essential libbcm2835-dev
-sudo npx node-gyp clean
-sudo npx node-gyp configure
-sudo npx node-gyp build
+npx node-gyp clean
+npx node-gyp configure
+npx node-gyp build
+```
+> ⚠️ Note: Running examples requires root privileges due to low-level SPI access:
+```bash
+sudo node examples/clock.js
 ```
 
 ## Example
