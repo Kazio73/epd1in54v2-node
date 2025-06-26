@@ -1,0 +1,21 @@
+{
+  "name": "epd1in54v-2-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "Kazik Karczewski",
+  "license": "MIT",
+  "description": "Native Node.js driver for Waveshare EPD 1.54\" V2.1 (Black/White)",
+  "devDependencies": {
+    "cmake-js": "^7.3.1",
+    "node-addon-api": "^8.3.1",
+    "node-gyp": "^11.2.0"
+  },
+  "dependencies": {
+    "canvas": "^3.1.0"
+  }
+}

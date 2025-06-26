@@ -1,5 +1,5 @@
 const { createCanvas } = require('canvas');
-const epd = require('../index');
+const epd = require('../build/Release/epd.node');
 
 (async () => {
     await epd.init();
