@@ -1,0 +1,5 @@
+/* === Notes === */
+// - Add GPIO and SPI configuration in DEV_Config.c/h
+// - Use BCM2835 or optionally spidev for portability
+// - examples/clock.js should use `canvas` and render time + weather data
+// - test/sanity-test.js can run `init -> clear -> display -> sleep`
