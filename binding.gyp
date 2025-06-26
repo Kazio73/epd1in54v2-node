@@ -13,7 +13,7 @@
         "src/lib/Config"
       ],
       "defines": ["RPI", "USE_BCM2835_LIB"],
-      "libraries": ["bcm2835"],
+      "libraries": ["-lbcm2835"],
       "cflags": ["-std=c99", "-DRPI", "-DUSE_BCM2835_LIB"]
     }
   ]
