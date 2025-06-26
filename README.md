@@ -15,9 +15,14 @@ Native Node.js bindings for the Waveshare 1.54" V2.1 e-Paper display (BW).
 
 ## Installation
 ```bash
-git clone https://github.com/Kazio73/epd1in54v2-node.git
+git clone https://github.com/youruser/epd1in54v2-node.git
 cd epd1in54v2-node
 npm install
+
+# Build steps
+sudo npx node-gyp clean
+sudo npx node-gyp configure
+sudo npx node-gyp build
 ```
 
 ## Example
@@ -34,9 +39,9 @@ const { init, clear, display, displayPartial, displayBase, sleep } = require('./
 })();
 ```
 
-## Acknowledgments
-- This project is developed using the **non-commercial license** of [JetBrains WebStorm](https://www.jetbrains.com/webstorm/). Thanks to JetBrains for supporting open source!
-- Special thanks to [ChatGPT](https://chat.openai.com) for development assistance, debugging support, and tireless collaboration. 🤖❤️
+## Acknowledgements
+- Thanks to [JetBrains](https://www.jetbrains.com/webstorm/) for providing a non-commercial WebStorm license.
+- This project is supported by ChatGPT 🤖
 
 ## License
 MIT
