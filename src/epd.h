@@ -25,15 +25,6 @@ void EPD_DisplayBase(uint8_t *image);
 void EPD_DisplayPartial(uint8_t *image);
 void EPD_Sleep(void);
 
-
-/**
- * @brief Wyświetl bufor 1bpp o rozmiarze (width * height / 8)
- * @param image Bufor obrazu (czarno-biały bitmap: 1 = biały, 0 = czarny)
- * @param len Długość bufora w bajtach
-
-void EPD_Display(uint8_t *image);
- */
-
 #ifdef __cplusplus
 }
 #endif

@@ -7,7 +7,7 @@
 #define DECLARE_NAPI_METHOD(name, func)        \
     { name, 0, func, 0, 0, 0, napi_default, 0 }
 
-// --- Funkcje opakowujące (wrappers) ---
+// --- Wrappers ---
 
 napi_value Init(napi_env env, napi_callback_info info) {
     printf("📦 EPD_Init() called\n");
@@ -89,7 +89,7 @@ napi_value Sleep(napi_env env, napi_callback_info info) {
     return NULL;
 }
 
-// --- Eksport do Node.js ---
+// --- Node.js export ---
 
 napi_value InitAddon(napi_env env, napi_value exports) {
     napi_status status;
